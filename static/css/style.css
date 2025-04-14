@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    /* background: linear-gradient(180DEG, #BF00FF, #6200FF); */
+    background: url("../images/Medusa Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Gambar untuk orientasi landscape */
+@media (orientation: landscape) {
+    body.not-nekopoi[data-path="link-tree"],
+    body.not-nekopoi[data-path="nsfw.html"] {
+        background-image: url('../images/Background Landscape.jpg');
+    }
+}
+
+/* Gambar untuk orientasi portrait */
+@media (orientation: portrait) {
+    body[data-path="link-tree"],
+    body[data-path="nsfw.html"] {
+        background-image: url('../images/Background Portrait.jpg');
+    }
+}
