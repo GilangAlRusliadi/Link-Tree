@@ -36,6 +36,8 @@ async function fetchIconsData() {
 
 fetchIconsData(); // Panggil fungsi untuk mulai fetch
 
+
+// Fungsi untuk buat footer
 document.addEventListener("DOMContentLoaded", function () {
   const profiles = document.querySelectorAll(".profile");
   const footers = document.querySelectorAll("footer");
